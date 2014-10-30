@@ -1,6 +1,8 @@
 simplebus-client
 ================
 
+Simplebus is live! [Check it out!](https://jamesliu.ca/simplebus)
+
 Client side of simplebus
 
 View the server repo [here](https://github.com/yeah568/simplebus-server).
