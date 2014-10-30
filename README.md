@@ -1,4 +1,4 @@
-simplebus-client
+simplebus
 ================
 
 Client side of simplebus
