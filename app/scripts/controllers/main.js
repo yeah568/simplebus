@@ -11,7 +11,7 @@ angular.module('busApp')
       // 0 padding to make the API happy
       if (routeid.length < 3) {
         var first = routeid.charAt(0).toLowerCase();
-        if (first != 'c' && first != 'n') {
+        if (first !== 'c' && first !== 'n') {
           switch (routeid.length) {
             case 1:
               routeid = '00' + routeid;
@@ -56,9 +56,11 @@ angular.module('busApp')
 
     $scope.updateEstimates = function() {
       var routes = localStorageService.get('routes');
-      routes.forEach(function(route) {
-          delete route.response;
-        });
+      if (routes) {
+        routes.forEach(function(route) {
+            delete route.response;
+          });
+      }
 
       console.log(routes);
 
